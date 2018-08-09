@@ -1,0 +1,14 @@
+<h1>Count is {{ size }}</h1>
+
+<a href="{% url 'home' %}">Start Over</a>
+<br />
+
+{{ fulltext }}
+
+<h1>Occurances</h1><br />
+ {% for word in occurance %}
+
+ {{word}}
+ <br />
+
+ {% endfor %}
